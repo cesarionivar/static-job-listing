@@ -19,6 +19,10 @@
     justify-content: space-between;
     align-items: center;
 
+    &.none {
+        display: none;
+    }
+
     &__content {
         display: flex;
         flex-wrap: wrap;
