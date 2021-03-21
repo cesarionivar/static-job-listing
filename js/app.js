@@ -50,13 +50,18 @@ function createJobElements(job) {
     jobName.classList.add('job__name');
     jobName.textContent = company;
     
+
     const jobTag = document.createElement('div');
-    jobTag.classList.add('job__tag');
-    jobTag.textContent = job.new;
+    if(job.new) {
+        jobTag.classList.add('job__tag');
+        jobTag.textContent = 'new';
+    }
    
     const jobFeature = document.createElement('div');
-    jobFeature.classList.add('job__feature');
-    jobFeature.textContent = featured;
+    if(featured) {
+        jobFeature.classList.add('job__feature');
+        jobFeature.textContent = 'featured';
+    }
 
     jobType.appendChild(jobName);
     jobType.appendChild(jobTag);
@@ -132,8 +137,13 @@ function createJobElements(job) {
     jobBox.appendChild(jobTitle);
     jobBox.appendChild(jobStatus);
     jobBox.appendChild(jobSkills);
-
+    
     fragment.appendChild(jobBox);
 }
 
-fetchJobs();
+document.addEventListener('DOMContentLoaded', () => {
+    fetchJobs();
+    
+});
+
+
