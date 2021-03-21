@@ -17,4 +17,9 @@ body {
 .container {
     margin-left: 5vw;
     margin-right: 5vw;
+
+    @include breakpoint-up(medium) {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
 }
