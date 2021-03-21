@@ -1,0 +1,116 @@
+.job {
+    background-color: $white;
+    margin: 60px 0px;
+    padding: 20px;
+    border-left: 7px solid $desaturatedDarkCyan;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px $darkGrayishCyan;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+
+        img {
+            margin-top: -50px;
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+        }
+    }
+
+    &__type {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 2px 0px 15px 0px;
+    }
+
+    &__name {
+        color: $desaturatedDarkCyan;
+        margin-right: 15px;
+    }
+
+    &__tag {
+        background-color: $desaturatedDarkCyan;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+    
+    &__feature {
+        background-color: $veryDarkGrayishCyan;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        color: $veryDarkGrayishCyan;
+        font-weight: bold;
+    }
+
+    &__status {
+        display: flex;
+        justify-content: flex-start;
+        color: $veryDarkGrayishCyan;
+        margin: 20px 0px;
+        opacity: .7;
+    }
+
+    &__active {
+        margin-right: 10px;
+    }
+
+    &__time {
+        margin-right: 10px;
+
+        &::before {
+            content: '·';
+            padding-right: 5px;
+        }
+    }
+
+    &__country {
+        &::before {
+            content: '·';
+            padding-right: 5px;
+        }
+    }
+
+    &__skills {
+        border-top: 0.5px solid $darkGrayishCyan;
+        padding-top: 20px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                list-style: none;
+                background-color: $lightGrayishCyanFilter;
+                color: $desaturatedDarkCyan;
+                font-weight: bold;
+                margin: 10px 5px; 
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                &.isActive, 
+                &:hover {
+                    
+                    background-color: $desaturatedDarkCyan;
+                    color: $white;
+                }
+            }
+        }
+
+    }
+
+
+
+
+}
