@@ -1,0 +1,69 @@
+.header {
+    display: block;
+    background-color: $veryDarkGrayishCyan;
+    background-image: url('../images/bg-header-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170px;
+    width: 100%;
+}
+
+.filter {
+    background-color: $white;
+    margin-top: -40px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px $darkGrayishCyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            background-color: $lightGrayishCyanFilter;
+            list-style: none;
+            font-size: 12px;
+            margin: 5px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            span {
+                padding: 10px;
+                color: $desaturatedDarkCyan;
+                font-weight: bold;
+            }
+
+            a {
+                display: inline-block;
+                background-color: $desaturatedDarkCyan;
+                padding: 10px;
+                color: $white;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 0px 5px 5px 0px;
+
+                &:hover {
+                    background-color: $veryDarkGrayishCyan;
+                }
+            }
+        }
+    }
+
+    &__clear {
+        text-decoration: none;
+        color: gray;
+
+        &:hover {
+            text-decoration: underline;
+            color: $desaturatedDarkCyan;
+        }
+        
+    }
+
+}

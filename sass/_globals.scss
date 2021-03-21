@@ -9,7 +9,12 @@ html {
 }
 
 body {
+    background-color: $lightGrayishCyan;
     font-family: $primaryFont;
     font-size: 15px;
 }
 
+.container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
